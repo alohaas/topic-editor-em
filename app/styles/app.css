@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;*/
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* the rest */
+
+body.em-topic {
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 16px;
+}
+
+/* layout */
+
+.layout-outer {
+  display: block;
+  width: 100%;
+}
+
+.layout-inner {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col--33 { width: 33%; }
+
+
+/* text & color */
+
+.tx-small   { font-size: 11px; }
+.tx-reg     { font-size: 16px; }
+.tx-large   { font-size: 28px; }
+
+.tx-grey    { color: #333; }
+.tx-white   { color: #fff; }
+
+.tx-center  { text-align: center; }
+
+.bg-red   { background-color: #e37151; }
+.bg-blue  { background-color: #4495d4; }
+.bg-grey  { background-color: #f7f7f7; }
+
+.em-topic a {
+	color: #4495d4;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+/* global elements */
+
+.em-topic header,
+.em-topic .main {
+  padding: 40px 0;
+}
+
+.em-topic footer {
+  padding: 10px 0;
+}
+
+/* component elements */
+
+.topic-items {
+	position: relative;
+	margin-top: 1.5em;
+	overflow: hidden;
+}
+
+.topic-items > li {
+	position: relative;
+  display: block;
+  padding: 0.5em 0;
+	line-height: 2em;
+}
+
+.topic-items li.viewing {
+	background-color: #f7f7f7;
+}
+
+.topic-title {
+	margin-left: 1em;
+}
+
+.topic-item:hover .topic-control {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.topic-control {
+  /*opacity: 0;*/
+}
+
+.em-topic input[type="text"] {
+  height: 2em;
+	padding: 0 0.5em;
+  background-color: #F7F7F7;
+  border: 1px solid #E6E6E6;
+}
+
+.ia-items {
+	position: absolute;
+	top: 0;
+	left: 67%;
+	padding: 0.5em 0;
+}
+
+.ia-item {
+	padding-left: 1em;
+}

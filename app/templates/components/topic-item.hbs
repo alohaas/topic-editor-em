@@ -1,0 +1,13 @@
+<span {{bind-attr class="viewing"}}>
+  {{#if editing}}
+    <span class="col col--33">{{input type="text" id="edit-topic" value=topic.name enter="submitTopic"}}</span>
+    <button {{action "submitTopic"}} class="topic-control topic-control--edit">done</button>
+  {{else}}
+    <span class="topic-title col col--33">{{title topic.name}}</span><button class="topic-control topic-control--edit" {{action "editTopic"}}>edit</button>
+  {{/if}}
+  <button class="topic-control topic-control--delete" disabled={{editing}} {{action "deleteTopic"}}>delete</button>
+  <button class="topic-control topic-control--view" disabled={{editing}} {{action "viewIas"}}>view {{length topic.instant_answer_topics}} ias</button>
+  {{#if viewing}}
+    {{ia-list ias=topic.instant_answer_topics}}
+  {{/if}}
+</span>
