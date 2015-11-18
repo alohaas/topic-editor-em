@@ -1,7 +1,7 @@
 {
   "name": "topic-editor-em",
   "version": "0.0.0",
-  "description": "Small description for topic-editor-em goes here",
+  "description": "prototype of a topic editor built with react.js",
   "private": true,
   "directories": {
     "doc": "doc",

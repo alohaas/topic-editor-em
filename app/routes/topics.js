@@ -17,8 +17,9 @@ export default Ember.Route.extend({
       },
 
      deleteTopic(topic) {
-       this.store.findRecord('topic', topic.id).then(function(post) {
-        return topic.destroyRecord();
+       console.log('am i here: ',topic);
+       this.store.findRecord('topic', topic.id).then(function(t) {
+        return t.destroyRecord();
       });
      }
 

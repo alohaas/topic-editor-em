@@ -22,13 +22,15 @@ export default Ember.Component.extend({
 
     submitTopic() {
       let topic = this.get('topic');
+      console.log('i am editing: '+topic);
       this.sendAction('updateTopic', topic);
       this.set('editing', false);
     },
 
     deleteTopic() {
       let topic = this.get('topic');
-      this.sendAction('deleteTopic', topic);
+      console.log('what is topic: '+ topic);
+      this.sendAction('deleteTopic', );
     }
   }
 });
